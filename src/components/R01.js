@@ -133,6 +133,10 @@ function R01() {
 
 
 
+          <div class="d-grid gap-2 col-md-6 my-3 mx-auto ">
+            <button class="btn btn-primary" type="button">ส่งคำร้อง</button>
+          </div>
+
 
 
 
