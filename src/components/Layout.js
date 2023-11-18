@@ -15,11 +15,11 @@ function Layout() {
     return (
         <>
             <Navbar />
-            {/* <TableStudent /> */}
-            {/* <R01 /> */}
-            {/* <R11 /> */}
-            {/* <R23/> */}
-            {/* <R16/> */}
+            <TableStudent />
+            <R01 />
+            <R11 />
+            <R23/>
+            <R16/>
             <R17/>
         </>
     );
