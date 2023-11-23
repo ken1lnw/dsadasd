@@ -192,6 +192,12 @@ function R23() {
                     </div>
 
 
+                    <div class=" col-md-12 mb-3">
+                        <label for="formFile" class="form-label">อัพโหลดไฟล์ที่เกี่ยวข้อง (1 ไฟล์)</label>
+                        <input class="form-control" type="file" id="formFile"/>
+                    </div>
+
+
 
                     <div class="d-grid gap-2 col-md-6 my-3 mx-auto ">
                         <button class="btn btn-primary" type="button">ส่งคำร้อง</button>
