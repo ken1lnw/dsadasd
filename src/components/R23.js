@@ -107,12 +107,12 @@ function R23() {
                     <div class="row gx-1">
 
 
-                        <div class=" col-md-1 form-floating mb-3">
+                        <div class=" col-md-2 form-floating mb-3">
                             <input type="text" class="form-control" id="floatingInput" />
                             <label for="floatingInput">ชั้นปีที่</label>
                         </div>
 
-                        <div class=" col-md-1 form-floating mb-3">
+                        <div class=" col-md-2 form-floating mb-3">
                             <input type="text" class="form-control" id="floatingInput" />
                             <label for="floatingInput">ระยะเวลาศึกษา(ปี)</label>
                         </div>
