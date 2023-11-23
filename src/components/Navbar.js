@@ -89,9 +89,10 @@ function Navbar() {
                                     <ul class="dropdown-menu dropdown-menu-dark ">
                                         <li><a class="dropdown-item" href="#">R.01 คำร้องทั่วไป</a></li>
                                         <li><a class="dropdown-item" href="#"> R.11 คำร้องขอลงทะเบียนเรียนเทียบรายวิชา</a></li>
-                                        <li><a class="dropdown-item" href="#"> R.15 คำร้องขอลาป่วย/ลากิจ</a></li>
-                                        <li><a class="dropdown-item" href="#"> R.18 คำร้องขอเพิ่มที่นั่ง</a></li>
-                                        <li><a class="dropdown-item" href="#"> R.19 คำร้องขอเปิดรายวิชาเรียน</a></li>
+                                        <li><a class="dropdown-item" href="#"> R.16 คำร้องขอเพิ่มที่นั่ง</a></li>
+                                        <li><a class="dropdown-item" href="#"> R.17 คำร้องขอเปิดรายวิชาเรียน</a></li>
+                                        <li><a class="dropdown-item" href="#"> R.23 คำร้องขอลาป่วย/ลากิจ</a></li>
+
 
                                         <li>
                                             <hr class="dropdown-divider" />
