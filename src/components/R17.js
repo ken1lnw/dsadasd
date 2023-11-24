@@ -143,6 +143,22 @@ function R17() {
 
 
 
+                    <div class="row gx-1">
+
+
+                        <div class=" col-md-12  ms-2 mb-3">
+                            <label for="กรณีเปิดรายวิชา" >กรณีเปิดรายวิชา</label>
+                        </div>
+
+
+                        <div class=" col-md-12 form-floating mb-3">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option value="วิศวกรรมศาสตร์และเทคโนโลยี">เป็นรายวิชาที่นักศึกษาขอเปิด และคณะเป็นผู้กำกับดูแลตามหลักสูตร</option>
+                                        <option value="วิศวกรรมศาสตร์และเทคโนโลยี">เป็นรายวิชาที่นักศึกษาขอเปิด และเป็นรายวิชาเรียนข้ามคณะ</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">กรณีเปิดรายวิชา</label>
+                                </div>
+                    </div>
 
 
 
