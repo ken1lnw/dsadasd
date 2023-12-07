@@ -101,7 +101,7 @@ function R11() {
                         <div className="col-md-1 form-floating mb-3">
                             <select
                                 className="form-select"
-                                value={prefix}
+                                defaultValue={prefix}
                                 onChange={(e) => setPrefix(e.target.value)}
                             >
                                 <option value="นาย">นาย</option>
@@ -155,7 +155,7 @@ function R11() {
                         <div className="col-md-2 form-floating mb-3">
                             <select
                                 className="form-select"
-                                value={educationLevel}
+                                defaultValue={educationLevel}
                                 onChange={(e) => setEducationLevel(e.target.value)}
                             >
                                 <option value="ปวช">ปวช.</option>
@@ -170,7 +170,7 @@ function R11() {
                         <div className=" col-md-5 form-floating mb-3">
                             <select
                                 className="form-select"
-                                value={faculty}
+                                defaultValue={faculty}
                                 onChange={(e) => setFaculty(e.target.value)}
                             >
                                 <option value="วิศวกรรมศาสตร์และเทคโนโลยี">วิศวกรรมศาสตร์และเทคโนโลยี</option>

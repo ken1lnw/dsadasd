@@ -60,7 +60,7 @@ function R17() {
             courseOwnershipFaculty,
             courseOwnershipMajor,
         });
-        // Add your logic value valuem submission here
+        // Add your logic for form submission here
     };
 
     return (
@@ -80,9 +80,9 @@ function R17() {
                 <div className="col-12 ">
 
 
-                    <div className=" col-md-3 valuem-floating mb-3 ms-auto">
+                    <div className=" col-md-3 form-floating mb-3 ms-auto">
                         <input type="date"
-                            className="valuem-control"
+                            className="form-control"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                         />
@@ -90,9 +90,9 @@ function R17() {
                     </div>
 
 
-                    <div className=" col-md-4 valuem-floating mb-3">
+                    <div className=" col-md-4 form-floating mb-3">
                         <select
-                            className="valuem-select"
+                            className="form-select"
                             defaultValue={faculty1}
                             onChange={(e) => setFaculty1(e.target.value)}
                         >
@@ -111,9 +111,9 @@ function R17() {
 
   
 
-                        <div className="col-md-1 valuem-floating mb-3">
+                        <div className="col-md-1 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={prefix}
                                 onChange={(e) => setPrefix(e.target.value)}
                             >
@@ -124,20 +124,20 @@ function R17() {
                             <label>คำนำหน้า</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                             />
                             <label>ชื่อ</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                             />
@@ -145,10 +145,10 @@ function R17() {
                         </div>
 
 
-                        <div className=" col-md-3 valuem-floating mb-3">
+                        <div className=" col-md-3 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={studentID}
                                 onChange={(e) => setStudentID(e.target.value)}
                             />
@@ -165,9 +165,9 @@ function R17() {
 
                     <div className="row gx-1">
 
-                        <div className="col-md-2 valuem-floating mb-3">
+                        <div className="col-md-2 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={educationLevel}
                                 onChange={(e) => setEducationLevel(e.target.value)}
                             >
@@ -181,19 +181,19 @@ function R17() {
                         </div>
 
 
-                        <div className="col-md-2 valuem-floating mb-3">
+                        <div className="col-md-2 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={year1}
                                 onChange={(e) => setYear1(e.target.value)}
                             />
                             <label>ชั้นปีที่</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={faculty2}
                                 onChange={(e) => setFaculty2(e.target.value)}
                             >
@@ -202,10 +202,10 @@ function R17() {
                             <label>คณะ</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={major2}
                                 onChange={(e) => setMajor2(e.target.value)}
                             />
@@ -225,20 +225,20 @@ function R17() {
                     <div className="row gx-1 mb-5">
 
 
-                        <div className=" col-md-6 valuem-floating mb-3">
+                        <div className=" col-md-6 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={contactNumber}
                                 onChange={(e) => setContactNumber(e.target.value)}
                             />
                             <label>เบอร์โทรติดต่อนักศึกษา</label>
                         </div>
 
-                        <div className=" col-md-6 valuem-floating mb-3">
+                        <div className=" col-md-6 form-floating mb-3">
                             <input
                                 type="email"
-                                className="valuem-control"
+                                className="form-control"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
 
@@ -261,9 +261,9 @@ function R17() {
                         </div>
 
 
-                        <div className=" col-md-12 valuem-floating mb-3">
+                        <div className=" col-md-12 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={courseCase}
                                 onChange={(e) => setCourseCase(e.target.value)}
                             >
@@ -289,20 +289,20 @@ function R17() {
                         <div className="row gx-1 mb-5">
 
 
-                            <div className=" col-md-6 valuem-floating mb-3">
+                            <div className=" col-md-6 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={desiredCourseCode}
                                     onChange={(e) => setDesiredCourseCode(e.target.value)}
                                 />
                                 <label>ในรหัสวิชา</label>
                             </div>
 
-                            <div className=" col-md-6 valuem-floating mb-3">
+                            <div className=" col-md-6 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={desiredCourseName}
                                     onChange={(e) => setDesiredCourseName(e.target.value)}
                                 />
@@ -313,29 +313,29 @@ function R17() {
                                 <label>จำนวนหน่วยกิต</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={creditHoursPractice}
                                     onChange={(e) => setCreditHoursPractice(e.target.value)}
                                 />
                                 <label>ภาคปฏิบัติ</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={creditHoursTheory}
                                     onChange={(e) => setCreditHoursTheory(e.target.value)}
                                 />
                                 <label>ภาคทฤษฎี</label>
                             </div>
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={totalCreditHours}
                                     onChange={(e) => setTotalCreditHours(e.target.value)}
                                 />
@@ -351,30 +351,30 @@ function R17() {
                                 <label>เวลาเรียน/สัปดาห์</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={studyHoursTheory}
                                     onChange={(e) => setStudyHoursTheory(e.target.value)}
                                 />
                                 <label>ภาคทฤษฎี(ชั่วโมง/สัปดาห์)</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={studyHoursPractice}
                                     onChange={(e) => setStudyHoursPractice(e.target.value)}
                                 />
                                 <label>ภาคปฏิบัติ(ชั่วโมง/สัปดาห์)</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={totalStudyHours}
                                     onChange={(e) => setTotalStudyHours(e.target.value)}
                                 />
@@ -392,30 +392,30 @@ function R17() {
                             </div>
 
                             <div className="row gx-1">
-                                <div className=" col-md-2 valuem-floating mb-3">
+                                <div className=" col-md-2 form-floating mb-3">
                                     <input
                                         type="text"
-                                        className="valuem-control"
+                                        className="form-control"
                                         value={enrolledYear}
                                         onChange={(e) => setEnrolledYear(e.target.value)}
                                     />
                                     <label>ชั้นปีที่</label>
                                 </div>
 
-                                <div className=" col-md-2 valuem-floating mb-3">
+                                <div className=" col-md-2 form-floating mb-3">
                                     <input
                                         type="text"
-                                        className="valuem-control"
+                                        className="form-control"
                                         value={enrolledSemester}
                                         onChange={(e) => setEnrolledSemester(e.target.value)}
                                     />
                                     <label>ภาคการศึกษาที่</label>
                                 </div>
 
-                                <div className=" col-md-12 valuem-floating mb-3">
+                                <div className=" col-md-12 form-floating mb-3">
                                     <input
                                         type="text"
-                                        className="valuem-control"
+                                        className="form-control"
                                         value={enrollmentReason}
                                         onChange={(e) => setEnrollmentReason(e.target.value)}
                                     />
@@ -430,9 +430,9 @@ function R17() {
                             </div>
 
                             <div className="row gx-1">
-                                <div className=" col-md-4 valuem-floating mb-3">
+                                <div className=" col-md-4 form-floating mb-3">
                                     <select
-                                        className="valuem-select"
+                                        className="form-select"
                                         def={courseOwnershipFaculty}
                                         onChange={(e) => setCourseOwnershipFaculty(e.target.value)}
                                     >
@@ -441,10 +441,10 @@ function R17() {
                                     <label>คณะ</label>
                                 </div>
 
-                                <div className=" col-md-6 valuem-floating mb-3">
+                                <div className=" col-md-6 form-floating mb-3">
                                     <input
                                         type="text"
-                                        className="valuem-control"
+                                        className="form-control"
                                         value={courseOwnershipMajor}
                                         onChange={(e) => setCourseOwnershipMajor(e.target.value)}
                                     />

@@ -44,7 +44,7 @@ function R16() {
             needSeats,
             currentRegistrationStatus,
         });
-        // Add your logic value valuem submission here
+        // Add your logic for form submission here
     };
 
 
@@ -66,9 +66,9 @@ function R16() {
                 <div className="col-12 ">
 
 
-                    <div className=" col-md-3 valuem-floating mb-3 ms-auto">
+                    <div className=" col-md-3 form-floating mb-3 ms-auto">
                         <input type="date"
-                            className="valuem-control"
+                            className="form-control"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                         />
@@ -89,9 +89,9 @@ function R16() {
 
 
 
-                        <div className="col-md-1 valuem-floating mb-3">
+                        <div className="col-md-1 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={prefix}
                                 onChange={(e) => setPrefix(e.target.value)}
                             >
@@ -102,20 +102,20 @@ function R16() {
                             <label>คำนำหน้า</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                             />
                             <label>ชื่อ</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                             />
@@ -123,10 +123,10 @@ function R16() {
                         </div>
 
 
-                        <div className=" col-md-3 valuem-floating mb-3">
+                        <div className=" col-md-3 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={studentID}
                                 onChange={(e) => setStudentID(e.target.value)}
                             />
@@ -143,9 +143,9 @@ function R16() {
 
                     <div className="row gx-1">
 
-                        <div className="col-md-2 valuem-floating mb-3">
+                        <div className="col-md-2 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={educationLevel}
                                 onChange={(e) => setEducationLevel(e.target.value)}
                             >
@@ -159,19 +159,19 @@ function R16() {
                         </div>
 
 
-                        <div className="col-md-2 valuem-floating mb-3">
+                        <div className="col-md-2 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={year}
                                 onChange={(e) => setYear(e.target.value)}
                             />
                             <label>ชั้นปีที่</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <select
-                                className="valuem-select"
+                                className="form-select"
                                 defaultValue={faculty}
                                 onChange={(e) => setFaculty(e.target.value)}
                             >
@@ -180,10 +180,10 @@ function R16() {
                             <label>คณะ</label>
                         </div>
 
-                        <div className=" col-md-4 valuem-floating mb-3">
+                        <div className=" col-md-4 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={major}
                                 onChange={(e) => setMajor(e.target.value)}
                             />
@@ -203,20 +203,20 @@ function R16() {
                     <div className="row gx-1 mb-5">
 
 
-                        <div className=" col-md-6 valuem-floating mb-3">
+                        <div className=" col-md-6 form-floating mb-3">
                             <input
                                 type="text"
-                                className="valuem-control"
+                                className="form-control"
                                 value={contactNumber}
                                 onChange={(e) => setContactNumber(e.target.value)}
                             />
                             <label>เบอร์โทรติดต่อนักศึกษา</label>
                         </div>
 
-                        <div className=" col-md-6 valuem-floating mb-3">
+                        <div className=" col-md-6 form-floating mb-3">
                             <input
                                 type="email"
-                                className="valuem-control"
+                                className="form-control"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
 
@@ -247,10 +247,10 @@ function R16() {
                         <div className="row gx-1 mb-5">
 
 
-                            <div className=" col-md-3 valuem-floating mb-3">
+                            <div className=" col-md-3 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={courseCode}
                                     onChange={(e) => setCourseCode(e.target.value)}
 
@@ -258,10 +258,10 @@ function R16() {
                                 <label>ในรหัสวิชา</label>
                             </div>
 
-                            <div className=" col-md-5 valuem-floating mb-3">
+                            <div className=" col-md-5 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={courseName}
                                     onChange={(e) => setCourseName(e.target.value)}
 
@@ -269,10 +269,10 @@ function R16() {
                                 <label>ชื่อวิชา</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={classGroup}
                                     onChange={(e) => setClassGroup(e.target.value)}
 
@@ -282,10 +282,10 @@ function R16() {
 
 
 
-                            <div className=" col-md-12 valuem-floating mb-3">
+                            <div className=" col-md-12 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={reasonForAddingSeats}
                                     onChange={(e) => setReasonForAddingSeats(e.target.value)}
 
@@ -298,10 +298,10 @@ function R16() {
                                 <label>ซึ่งปัจจุบันมีจำนวนที่ลงทะเบียนแล้ว</label>
                             </div>
 
-                            <div className=" col-md-2 valuem-floating mb-3">
+                            <div className=" col-md-2 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={currentSeats}
                                     onChange={(e) => setCurrentSeats(e.target.value)}
 
@@ -309,10 +309,10 @@ function R16() {
                                 <label>จำนวน(คน)</label>
                             </div>
 
-                            <div className=" col-md-3 valuem-floating mb-3">
+                            <div className=" col-md-3 form-floating mb-3">
                                 <input
                                     type="text"
-                                    className="valuem-control"
+                                    className="form-control"
                                     value={needSeats}
                                     onChange={(e) => setNeedSeats(e.target.value)}
 
@@ -331,9 +331,9 @@ function R16() {
                             </div>
 
                             <div className="row gx-1">
-                                <div className="col-md-3 valuem-floating mb-3">
+                                <div className="col-md-3 form-floating mb-3">
                                     <select
-                                        className="valuem-select"
+                                        className="form-select"
                                         defaultValue={currentRegistrationStatus}
                                         onChange={(e) => setCurrentRegistrationStatus(e.target.value)}
                                     >
