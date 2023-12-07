@@ -16,7 +16,7 @@ function Layout() {
     return (
         <>
             <Navbar />
-            <div class="container">
+            <div className="container">
             <TableStudent />
             <R01 />
             <R11 />

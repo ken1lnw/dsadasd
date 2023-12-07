@@ -50,59 +50,55 @@ function R01() {
 
 
 
-      {/* <div class="container text-center"> */}
+      {/* <div className="container text-center"> */}
 
       <h1> คำร้องทั่วไป</h1>
 
 
-      <div class="row">
+      <div className="row">
 
-        <div class="col-12 ">
+        <div className="col-12 ">
 
 
-          <div class=" col-md-3 form-floating mb-3 ms-auto">
+          <div className=" col-md-3 form-floating mb-3 ms-auto">
             <input
               type="date"
-              class="form-control"
-              id="floatingInput"
+              className="form-control"
               value={date}
               onChange={(e) => setDate(e.target.value)}
             />
-            <label for="floatingInput">วันที่</label>
+            <label>วันที่</label>
           </div>
 
 
 
-          <div class=" col-md-12 form-floating mb-3">
+          <div className=" col-md-12 form-floating mb-3">
             <input
               type="text"
-              class="form-control"
-              id="floatingInput"
+              className="form-control"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             />
-            <label for="floatingInput">เรื่อง</label>
+            <label>เรื่อง</label>
           </div>
 
 
 
-          <div class=" col-md-12 form-floating mb-3">
+          <div className=" col-md-12 form-floating mb-3">
             <input type="text"
-              class="form-control"
-              id="floatingInput"
+              className="form-control"
               value={toWhom}
               onChange={(e) => setToWhom(e.target.value)}
             />
-            <label for="floatingInput">เรียน</label>
+            <label>เรียน</label>
           </div>
 
 
 
-          <div class="row gx-1">
+          <div className="row gx-1">
 
-            <div class="col-md-1 form-floating mb-3">
-              <select class="form-select"
-                id="floatingSelectGrid"
+            <div className="col-md-1 form-floating mb-3">
+              <select className="form-select"
                 value={prefix}
                 onChange={(e) => setPrefix(e.target.value)}
               >
@@ -110,38 +106,35 @@ function R01() {
                 <option value="นาง">นาง</option>
                 <option value="นางสาว">นางสาว</option>
               </select>
-              <label for="floatingSelectGrid">คำนำหน้า</label>
+              <label>คำนำหน้า</label>
             </div>
 
-            <div class=" col-md-4 form-floating mb-3">
+            <div className=" col-md-4 form-floating mb-3">
               <input type="text"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
-              <label for="floatingInput">ชื่อ</label>
+              <label>ชื่อ</label>
             </div>
 
-            <div class=" col-md-4 form-floating mb-3">
+            <div className=" col-md-4 form-floating mb-3">
               <input type="text"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
-              <label for="floatingInput">นามสกุล</label>
+              <label>นามสกุล</label>
             </div>
 
 
-            <div class=" col-md-3 form-floating mb-3">
+            <div className=" col-md-3 form-floating mb-3">
               <input type="text"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={studentID}
                 onChange={(e) => setStudentID(e.target.value)}
               />
-              <label for="floatingInput">รหัสนักศึกษา</label>
+              <label>รหัสนักศึกษา</label>
             </div>
 
           </div>
@@ -152,45 +145,42 @@ function R01() {
 
 
 
-          <div class="row gx-1">
+          <div className="row gx-1">
 
-            <div class="col-md-2 form-floating mb-3">
+            <div className="col-md-2 form-floating mb-3">
               <select
-                class="form-select"
-                id="floatingSelectGrid"
+                className="form-select"
                 value={educationLevel}
                 onChange={(e) => setEducationLevel(e.target.value)}
               >
                 <option value="ปวช">ปวช.</option>
                 <option value="ปวส">ปวส.</option>
-                <option selected value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
                 <option value="ปริญญาโท">ปริญญาโท</option>
                 <option value="ปริญญาเอก">ปริญญาเอก</option>
               </select>
-              <label for="floatingSelectGrid">ระดับการศึกษา</label>
+              <label>ระดับการศึกษา</label>
             </div>
 
-            <div class=" col-md-5 form-floating mb-3">
+            <div className=" col-md-5 form-floating mb-3">
               <select
-                class="form-select"
-                id="floatingSelectGrid"
+                className="form-select"
                 value={faculty}
                 onChange={(e) => setFaculty(e.target.value)}
               >
                 <option value="วิศวกรรมศาสตร์และเทคโนโลยี">วิศวกรรมศาสตร์และเทคโนโลยี</option>
               </select>
-              <label for="floatingSelectGrid">คณะ</label>
+              <label>คณะ</label>
             </div>
 
-            <div class=" col-md-5 form-floating mb-3">
+            <div className=" col-md-5 form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={major}
                 onChange={(e) => setMajor(e.target.value)}
               />
-              <label for="floatingInput">สาขาวิชา</label>
+              <label>สาขาวิชา</label>
             </div>
 
           </div>
@@ -199,42 +189,39 @@ function R01() {
 
 
 
-          <div class=" col-md-12 form-floating mb-3">
+          <div className=" col-md-12 form-floating mb-3">
             <textarea
-              class="form-control"
-              id="floatingTextarea"
+              className="form-control"
               value={intention}
               onChange={(e) => setIntention(e.target.value)}
             ></textarea>
-            <label for="floatingTextarea">มีความประสงค์</label>
+            <label>มีความประสงค์</label>
           </div>
 
 
 
 
-          <div class="row gx-1">
+          <div className="row gx-1">
 
 
-            <div class=" col-md-6 form-floating mb-3">
+            <div className=" col-md-6 form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={contactNumber}
                 onChange={(e) => setContactNumber(e.target.value)}
               />
-              <label for="floatingInput">เบอร์โทรติดต่อนักศึกษา</label>
+              <label>เบอร์โทรติดต่อนักศึกษา</label>
             </div>
 
-            <div class=" col-md-6 form-floating mb-3">
+            <div className=" col-md-6 form-floating mb-3">
               <input
                 type="email"
-                class="form-control"
-                id="floatingInput"
+                className="form-control"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <label for="floatingInput">อีเมลติดต่อนักศึกษา</label>
+              <label>อีเมลติดต่อนักศึกษา</label>
             </div>
 
           </div>
@@ -242,8 +229,8 @@ function R01() {
 
 
 
-          <div class="d-grid gap-2 col-md-6 my-3 mx-auto ">
-            <button class="btn btn-primary" type="button" onClick={handleSubmit} >ส่งคำร้อง</button>
+          <div className="d-grid gap-2 col-md-6 my-3 mx-auto ">
+            <button className="btn btn-primary" type="button" onClick={handleSubmit} >ส่งคำร้อง</button>
           </div>
 
 

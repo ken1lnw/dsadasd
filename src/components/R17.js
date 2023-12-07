@@ -60,7 +60,7 @@ function R17() {
             courseOwnershipFaculty,
             courseOwnershipMajor,
         });
-        // Add your logic for form submission here
+        // Add your logic value valuem submission here
     };
 
     return (
@@ -70,101 +70,89 @@ function R17() {
 
 
 
-            {/* <div class="container text-center"> */}
+            {/* <div className="container text-center"> */}
 
             <h1>คำร้องเปิดรายวิชาเรียน</h1>
 
 
-            <div class="row g-0">
+            <div className="row g-0">
 
-                <div class="col-12 ">
+                <div className="col-12 ">
 
 
-                    <div class=" col-md-3 form-floating mb-3 ms-auto">
+                    <div className=" col-md-3 valuem-floating mb-3 ms-auto">
                         <input type="date"
-                            class="form-control"
-                            id="floatingInput"
+                            className="valuem-control"
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
                         />
-                        <label for="floatingInput">วันที่</label>
+                        <label>วันที่</label>
                     </div>
 
 
-                    <div class=" col-md-4 form-floating mb-3">
+                    <div className=" col-md-4 valuem-floating mb-3">
                         <select
-                            class="form-select"
-                            id="floatingSelectGrid"
-                            value={faculty1}
+                            className="valuem-select"
+                            defaultValue={faculty1}
                             onChange={(e) => setFaculty1(e.target.value)}
                         >
                             <option value="วิศวกรรมศาสตร์และเทคโนโลยี">วิศวกรรมศาสตร์และเทคโนโลยี</option>
                         </select>
-                        <label for="floatingInput">เรียน คณบดีคณะ</label>
+                        <label>เรียน คณบดีคณะ</label>
                     </div>
 
 
 
 
-                    {/* <div class=" col-md-12 form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" />
-                        <label for="floatingInput">เรียน อาจารย์ผู้สอนประจำวิชา</label>
-                    </div> */}
 
 
 
-                    <div class="row gx-1">
+                    <div className="row gx-1">
 
-                        {/* <div class=" col-md-12  ms-2 mb-3">
-                            <label for="เรียนอาจารย์ประจำรายวิชา" >เรียนอาจารย์ประจำรายวิชา</label>
-                        </div> */}
+  
 
-                        <div class="col-md-1 form-floating mb-3">
+                        <div className="col-md-1 valuem-floating mb-3">
                             <select
-                                class="form-select"
-                                id="floatingSelectGrid"
-                                value={prefix}
+                                className="valuem-select"
+                                defaultValue={prefix}
                                 onChange={(e) => setPrefix(e.target.value)}
                             >
                                 <option value="นาย">นาย</option>
                                 <option value="นาง">นาง</option>
                                 <option value="นางสาว">นางสาว</option>
                             </select>
-                            <label for="floatingSelectGrid">คำนำหน้า</label>
+                            <label>คำนำหน้า</label>
                         </div>
 
-                        <div class=" col-md-4 form-floating mb-3">
+                        <div className=" col-md-4 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                             />
-                            <label for="floatingInput">ชื่อ</label>
+                            <label>ชื่อ</label>
                         </div>
 
-                        <div class=" col-md-4 form-floating mb-3">
+                        <div className=" col-md-4 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                             />
-                            <label for="floatingInput">นามสกุล</label>
+                            <label>นามสกุล</label>
                         </div>
 
 
-                        <div class=" col-md-3 form-floating mb-3">
+                        <div className=" col-md-3 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={studentID}
                                 onChange={(e) => setStudentID(e.target.value)}
                             />
-                            <label for="floatingInput">รหัสนักศึกษา</label>
+                            <label>รหัสนักศึกษา</label>
                         </div>
 
                     </div>
@@ -175,57 +163,53 @@ function R17() {
 
 
 
-                    <div class="row gx-1">
+                    <div className="row gx-1">
 
-                        <div class="col-md-2 form-floating mb-3">
+                        <div className="col-md-2 valuem-floating mb-3">
                             <select
-                                class="form-select"
-                                id="floatingSelectGrid"
-                                value={educationLevel}
+                                className="valuem-select"
+                                defaultValue={educationLevel}
                                 onChange={(e) => setEducationLevel(e.target.value)}
                             >
                                 <option value="ปวช">ปวช.</option>
                                 <option value="ปวส">ปวส.</option>
-                                <option selected value="ปริญญาตรี">ปริญญาตรี</option>
+                                <option value="ปริญญาตรี">ปริญญาตรี</option>
                                 <option value="ปริญญาโท">ปริญญาโท</option>
                                 <option value="ปริญญาเอก">ปริญญาเอก</option>
                             </select>
-                            <label for="floatingSelectGrid">ระดับการศึกษา</label>
+                            <label>ระดับการศึกษา</label>
                         </div>
 
 
-                        <div class="col-md-2 form-floating mb-3">
+                        <div className="col-md-2 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={year1}
                                 onChange={(e) => setYear1(e.target.value)}
                             />
-                            <label for="floatingInput">ชั้นปีที่</label>
+                            <label>ชั้นปีที่</label>
                         </div>
 
-                        <div class=" col-md-4 form-floating mb-3">
+                        <div className=" col-md-4 valuem-floating mb-3">
                             <select
-                                class="form-select"
-                                id="floatingSelectGrid"
-                                value={faculty2}
+                                className="valuem-select"
+                                defaultValue={faculty2}
                                 onChange={(e) => setFaculty2(e.target.value)}
                             >
                                 <option value="วิศวกรรมศาสตร์และเทคโนโลยี">วิศวกรรมศาสตร์และเทคโนโลยี</option>
                             </select>
-                            <label for="floatingSelectGrid">คณะ</label>
+                            <label>คณะ</label>
                         </div>
 
-                        <div class=" col-md-4 form-floating mb-3">
+                        <div className=" col-md-4 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={major2}
                                 onChange={(e) => setMajor2(e.target.value)}
                             />
-                            <label for="floatingInput">สาขาวิชา</label>
+                            <label>สาขาวิชา</label>
                         </div>
 
                     </div>
@@ -238,30 +222,28 @@ function R17() {
 
 
 
-                    <div class="row gx-1 mb-5">
+                    <div className="row gx-1 mb-5">
 
 
-                        <div class=" col-md-6 form-floating mb-3">
+                        <div className=" col-md-6 valuem-floating mb-3">
                             <input
                                 type="text"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={contactNumber}
                                 onChange={(e) => setContactNumber(e.target.value)}
                             />
-                            <label for="floatingInput">เบอร์โทรติดต่อนักศึกษา</label>
+                            <label>เบอร์โทรติดต่อนักศึกษา</label>
                         </div>
 
-                        <div class=" col-md-6 form-floating mb-3">
+                        <div className=" col-md-6 valuem-floating mb-3">
                             <input
                                 type="email"
-                                class="form-control"
-                                id="floatingInput"
+                                className="valuem-control"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
 
                             />
-                            <label for="floatingInput">อีเมลติดต่อนักศึกษา</label>
+                            <label>อีเมลติดต่อนักศึกษา</label>
                         </div>
 
                     </div>
@@ -271,99 +253,93 @@ function R17() {
 
 
 
-                    <div class="row gx-1">
+                    <div className="row gx-1">
 
 
-                        <div class=" col-md-12  ms-2 mb-3">
-                            <label for="กรณีเปิดรายวิชา" >กรณีเปิดรายวิชา</label>
+                        <div className=" col-md-12  ms-2 mb-3">
+                            <label>กรณีเปิดรายวิชา</label>
                         </div>
 
 
-                        <div class=" col-md-12 form-floating mb-3">
+                        <div className=" col-md-12 valuem-floating mb-3">
                             <select
-                                class="form-select"
-                                id="floatingSelectGrid"
-                                value={courseCase}
+                                className="valuem-select"
+                                defaultValue={courseCase}
                                 onChange={(e) => setCourseCase(e.target.value)}
                             >
                                 <option value="วิศวกรรมศาสตร์และเทคโนโลยี">เป็นรายวิชาที่นักศึกษาขอเปิด และคณะเป็นผู้กำกับดูแลตามหลักสูตร</option>
                                 <option value="วิศวกรรมศาสตร์และเทคโนโลยี">เป็นรายวิชาที่นักศึกษาขอเปิด และเป็นรายวิชาเรียนข้ามคณะ</option>
                             </select>
-                            <label for="floatingSelectGrid">กรณีเปิดรายวิชา</label>
+                            <label>กรณีเปิดรายวิชา</label>
                         </div>
                     </div>
 
 
 
-                    <div class="row gx-1">
+                    <div className="row gx-1">
 
 
-                        <div class=" col-md-12  ms-2 mb-3">
-                            <label for="มีความประสงค์ลงทะเบียนเทียบรายวิชาใน" >มีความประสงค์ขอเปิดรายวิชาเรียน</label>
+                        <div className=" col-md-12  ms-2 mb-3">
+                            <label>มีความประสงค์ขอเปิดรายวิชาเรียน</label>
                         </div>
 
 
 
 
-                        <div class="row gx-1 mb-5">
+                        <div className="row gx-1 mb-5">
 
 
-                            <div class=" col-md-6 form-floating mb-3">
+                            <div className=" col-md-6 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={desiredCourseCode}
                                     onChange={(e) => setDesiredCourseCode(e.target.value)}
                                 />
-                                <label for="floatingInput">ในรหัสวิชา</label>
+                                <label>ในรหัสวิชา</label>
                             </div>
 
-                            <div class=" col-md-6 form-floating mb-3">
+                            <div className=" col-md-6 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={desiredCourseName}
                                     onChange={(e) => setDesiredCourseName(e.target.value)}
                                 />
-                                <label for="floatingInput">ชื่อวิชา</label>
+                                <label>ชื่อวิชา</label>
                             </div>
 
-                            <div class=" col-md-12  ms-2 mb-3">
-                                <label for="จำนวนหน่วยกิต" >จำนวนหน่วยกิต</label>
+                            <div className=" col-md-12  ms-2 mb-3">
+                                <label>จำนวนหน่วยกิต</label>
                             </div>
 
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={creditHoursPractice}
                                     onChange={(e) => setCreditHoursPractice(e.target.value)}
                                 />
-                                <label for="floatingInput">ภาคปฏิบัติ</label>
+                                <label>ภาคปฏิบัติ</label>
                             </div>
 
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={creditHoursTheory}
                                     onChange={(e) => setCreditHoursTheory(e.target.value)}
                                 />
-                                <label for="floatingInput">ภาคทฤษฎี</label>
+                                <label>ภาคทฤษฎี</label>
                             </div>
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={totalCreditHours}
                                     onChange={(e) => setTotalCreditHours(e.target.value)}
                                 />
-                                <label for="floatingInput">รวม</label>
+                                <label>รวม</label>
                             </div>
 
 
@@ -371,41 +347,38 @@ function R17() {
 
 
 
-                            <div class=" col-md-12  ms-2 mb-3">
-                                <label for="มีความประสงค์ลงทะเบียนเทียบรายวิชาใน" >เวลาเรียน/สัปดาห์</label>
+                            <div className=" col-md-12  ms-2 mb-3">
+                                <label>เวลาเรียน/สัปดาห์</label>
                             </div>
 
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={studyHoursTheory}
                                     onChange={(e) => setStudyHoursTheory(e.target.value)}
                                 />
-                                <label for="floatingInput">ภาคทฤษฎี(ชั่วโมง/สัปดาห์)</label>
+                                <label>ภาคทฤษฎี(ชั่วโมง/สัปดาห์)</label>
                             </div>
 
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={studyHoursPractice}
                                     onChange={(e) => setStudyHoursPractice(e.target.value)}
                                 />
-                                <label for="floatingInput">ภาคปฏิบัติ(ชั่วโมง/สัปดาห์)</label>
+                                <label>ภาคปฏิบัติ(ชั่วโมง/สัปดาห์)</label>
                             </div>
 
-                            <div class=" col-md-2 form-floating mb-3">
+                            <div className=" col-md-2 valuem-floating mb-3">
                                 <input
                                     type="text"
-                                    class="form-control"
-                                    id="floatingInput"
+                                    className="valuem-control"
                                     value={totalStudyHours}
                                     onChange={(e) => setTotalStudyHours(e.target.value)}
                                 />
-                                <label for="floatingInput">รวม(ชั่วโมง/สัปดาห์)</label>
+                                <label>รวม(ชั่วโมง/สัปดาห์)</label>
                             </div>
 
 
@@ -414,73 +387,68 @@ function R17() {
 
 
 
-                            <div class=" col-md-12  ms-2 mb-3">
-                                <label for="มีความประสงค์ลงทะเบียนเทียบรายวิชาใน" >ซึ่งเป็นรายวิชาตามแผนการเรียนใน</label>
+                            <div className=" col-md-12  ms-2 mb-3">
+                                <label>ซึ่งเป็นรายวิชาตามแผนการเรียนใน</label>
                             </div>
 
-                            <div class="row gx-1">
-                                <div class=" col-md-2 form-floating mb-3">
+                            <div className="row gx-1">
+                                <div className=" col-md-2 valuem-floating mb-3">
                                     <input
                                         type="text"
-                                        class="form-control"
-                                        id="floatingInput"
+                                        className="valuem-control"
                                         value={enrolledYear}
                                         onChange={(e) => setEnrolledYear(e.target.value)}
                                     />
-                                    <label for="floatingInput">ชั้นปีที่</label>
+                                    <label>ชั้นปีที่</label>
                                 </div>
 
-                                <div class=" col-md-2 form-floating mb-3">
+                                <div className=" col-md-2 valuem-floating mb-3">
                                     <input
                                         type="text"
-                                        class="form-control"
-                                        id="floatingInput"
+                                        className="valuem-control"
                                         value={enrolledSemester}
                                         onChange={(e) => setEnrolledSemester(e.target.value)}
                                     />
-                                    <label for="floatingInput">ภาคการศึกษาที่</label>
+                                    <label>ภาคการศึกษาที่</label>
                                 </div>
 
-                                <div class=" col-md-12 form-floating mb-3">
+                                <div className=" col-md-12 valuem-floating mb-3">
                                     <input
                                         type="text"
-                                        class="form-control"
-                                        id="floatingInput"
+                                        className="valuem-control"
                                         value={enrollmentReason}
                                         onChange={(e) => setEnrollmentReason(e.target.value)}
                                     />
-                                    <label for="floatingInput">เนื่องจาก</label>
+                                    <label>เนื่องจาก</label>
                                 </div>
                             </div>
 
 
 
-                            <div class=" col-md-12  ms-2 mb-3">
-                                <label for="มีความประสงค์ลงทะเบียนเทียบรายวิชาใน" >และรายวิชานี้เป็นของ</label>
+                            <div className=" col-md-12  ms-2 mb-3">
+                                <label>และรายวิชานี้เป็นของ</label>
                             </div>
 
-                            <div class="row gx-1">
-                                <div class=" col-md-4 form-floating mb-3">
+                            <div className="row gx-1">
+                                <div className=" col-md-4 valuem-floating mb-3">
                                     <select
-                                        class="form-select"
-                                        id="floatingSelectGrid"
-                                        value={courseOwnershipFaculty}
+                                        className="valuem-select"
+                                        def={courseOwnershipFaculty}
                                         onChange={(e) => setCourseOwnershipFaculty(e.target.value)}
                                     >
                                         <option value="วิศวกรรมศาสตร์และเทคโนโลยี">วิศวกรรมศาสตร์และเทคโนโลยี</option>
                                     </select>
-                                    <label for="floatingSelectGrid">คณะ</label>
+                                    <label>คณะ</label>
                                 </div>
 
-                                <div class=" col-md-6 form-floating mb-3">
+                                <div className=" col-md-6 valuem-floating mb-3">
                                     <input
                                         type="text"
-                                        class="form-control"
-                                        id="floatingInput"
+                                        className="valuem-control"
                                         value={courseOwnershipMajor}
                                         onChange={(e) => setCourseOwnershipMajor(e.target.value)}
                                     />
-                                    <label for="floatingInput">สาขาวิชา</label>
+                                    <label>สาขาวิชา</label>
                                 </div>
 
 
@@ -503,8 +471,8 @@ function R17() {
 
 
 
-                    <div class="d-grid gap-2 col-md-6 my-3 mx-auto ">
-                        <button class="btn btn-primary" type="button" onClick={handleSubmit} >ส่งคำร้อง</button>
+                    <div className="d-grid gap-2 col-md-6 my-3 mx-auto ">
+                        <button className="btn btn-primary" type="button" onClick={handleSubmit} >ส่งคำร้อง</button>
                     </div>
 
 
